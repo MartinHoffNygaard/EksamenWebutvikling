@@ -1,0 +1,124 @@
+
+nav {
+    background-color: #FFDC00;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+nav a {
+    font-size: 25px;
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+} 
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-image: url(assets/images/oslomet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content {
+    width: 50vw;
+    grid-area: main; 
+    margin: 0 auto 0; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+    "box-1 box-1"
+    "box-2 box-3";
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+}
+
+.box-1 {
+    grid-area: box-1;
+    background-color: #FFDC00;
+    margin-top: 1rem; 
+    border-style: solid;
+    padding: 1rem;
+}
+
+.box-2 {
+    grid-area: box-2;
+    background-color: #FFDC00;
+    margin-bottom: 1rem;
+    border-style: solid;
+    padding: 1rem;
+}
+
+.box-3 {
+    grid-area: box-3;
+    background-color: #FFDC00;
+    margin-bottom: 1rem;
+    border-style: solid;
+    padding: 1rem;
+}
+
+.box-3 ul {
+    list-style: none;
+}
+
+.box-3 ul li:nth-child(1):before {
+    content: "🏈";
+       width: 1rem;
+       margin-left: -2rem
+}
+
+.box-3 ul li:nth-child(2):before {
+    content: "🏃";
+       width: 1rem;
+       margin-left: -2rem
+}
+
+.box-3 ul li:nth-child(3):before {
+    content: "🏋";
+       width: 1rem;
+       margin-left: -2rem
+}
+
+.box-3 ul li:nth-child(4):before {
+    content: "💻";
+       width: 1rem;
+       margin-left: -2rem
+}
+
+.box-3 ul li:nth-child(5):before {
+    content: "🍲";
+       width: 1rem;
+       margin-left: -2rem
+}
+
+.box-3 ul li:nth-child(6):before {
+    content: "🏎";
+       width: 1rem;
+       margin-left: -2rem
+}
+
+.box-3 ul li:nth-child(7):before {
+    content: "🍷";
+       width: 1rem;
+       margin-left: -2rem;
+}
+
+.box-3 ul li:nth-child(8):before {
+    content: "⛷";
+       width: 1rem;
+       margin-left: -2rem
+       
+}
+
+
+
+footer {
+    text-align: center;
+    background-color: #FFDC00;
+    padding: 1rem;
+}
