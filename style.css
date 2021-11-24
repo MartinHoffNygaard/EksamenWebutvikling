@@ -34,6 +34,16 @@ nav {
     border-style: solid;
 }
 
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li {
+    list-style-type: none;
+}
+
 .navigationbar {
     grid-area: header;
 }
@@ -48,7 +58,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    color: #007ACC;
+    background-color: #007ACC;
 }
 
 body {
