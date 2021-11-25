@@ -151,7 +151,7 @@ body {
     grid-area: content; 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
     grid-template-areas: 
@@ -364,20 +364,14 @@ body {
     }
 
     .fun-page-content {
-        margin: 0 1rem 1rem; 
-        grid-area: content; 
-        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-column-gap: 1rem;
-        grid-row-gap: 1rem;
         grid-template-areas: 
         "text-1 picture-1"
         "picture-2 text-2"
         "text-3 picture-3"
         "picture-4 text-4";
-    } 
-
+    }
 }
 
 @media screen and (min-width: 960px) {
