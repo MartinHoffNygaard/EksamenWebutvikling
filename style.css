@@ -92,6 +92,7 @@ body {
     margin-left: auto;
     background-color: #f5f2e3;
     grid-area: content; 
+    border: solid #191608;
 }
 
 .content div {
@@ -114,6 +115,7 @@ body {
     margin-left: auto;
     background-color: #f5f2e3;
     grid-area: content; 
+    border: solid #191608;
 }
 
 .two-column-content div {
@@ -124,6 +126,7 @@ body {
 .box-2, .box-3 {
     border-bottom: 1px solid #404042;
     box-shadow: 0 0 1px 0 #404042;
+    border: solid #191608
 }
 
 .box-4 img {
@@ -140,6 +143,74 @@ body {
 
 .box-5 img {
     display: none; 
+}
+
+.fun-page-content {
+    margin: 0 1rem 1rem; 
+    min-height: 90vh;
+    grid-area: content; 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    grid-template-areas: 
+        "text-1"
+        "picture-1"
+        "text-2"
+        "picture-2"
+        "text-3"
+        "picture-3"
+        "text-4"
+        "picture-4";
+}
+
+.fun-page-content img {
+    object-fit: cover;
+    display: block;
+    margin: auto; 
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.text-1 {
+    grid-area: text-1;
+    background-color: #95ccd5;
+    box-shadow: 10px 10px 10px #404042;
+}
+
+.text-2 {
+    grid-area: text-2;
+    background-color: #2785c9;
+    box-shadow: 10px 10px 10px #404042;
+}
+
+.text-3 {
+    grid-area: text-3;
+    background-color: #2b3579;
+    box-shadow: 10px 10px 10px #404042;
+}
+
+.text-4 {
+    grid-area: text-4;
+    background-color: #f5f2e3;
+    box-shadow: 10px 10px 10px #404042;
+}
+
+.picture-1 {
+    grid-area: picture-1;
+}
+
+.picture-2 {
+    grid-area: picture-2;
+}
+
+.picture-3 {
+    grid-area: picture-3;
+}
+
+.picture-4 {
+    grid-area: picture-4;
 }
 
 .box-3 ul {
@@ -251,6 +322,7 @@ body {
         "box-4 box-5";
         grid-column-gap: 1rem;
         grid-row-gap: 1rem;
+        border: solid #191608;
     }
 
     .content {
@@ -264,10 +336,12 @@ body {
     
     .box-2 {
         grid-area: box-2;
+        box-shadow: 10px 10px 10px #404042;
     }
     
     .box-3 {
         grid-area: box-3;
+        box-shadow: 10px 10px 10px #404042;
     }
 
     .box-4 {
@@ -287,6 +361,22 @@ body {
         max-width: 100%;
         max-height: 100%;
     }
+
+    .fun-page-content {
+        margin: 0 1rem 1rem; 
+        grid-area: content; 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+        grid-template-areas: 
+        "text-1 picture-1"
+        "picture-2 text-2"
+        "text-3 picture-3"
+        "picture-4 text-4";
+    } 
+
 }
 
 @media screen and (min-width: 960px) {
