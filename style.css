@@ -181,28 +181,32 @@ body {
     grid-area: text-1;
     background-color: #95ccd5;
     box-shadow: 10px 10px 10px #404042;
-    border: solid #191608
+    border: solid #191608;
 }
 
 .text-2 {
     grid-area: text-2;
     background-color: #2785c9;
     box-shadow: 10px 10px 10px #404042;
-    border: solid #191608
+    border: solid #191608;
+}
+
+.text-2 p, .text-2 h1, .text-3 p, .text-3 h1 {
+    color: #f5f2e3;
 }
 
 .text-3 {
     grid-area: text-3;
     background-color: #2b3579;
     box-shadow: 10px 10px 10px #404042;
-    border: solid #191608
+    border: solid #191608;
 }
 
 .text-4 {
     grid-area: text-4;
     background-color: #f5f2e3;
     box-shadow: 10px 10px 10px #404042;
-    border: solid #191608
+    border: solid #191608;
 }
 
 .picture-1 {
