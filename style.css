@@ -212,6 +212,20 @@ body {
     color: #fe3137;
 }
 
+#btnScrollToTop {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+}
+
 }
 
 @media screen and (min-width: 600px) and (max-width: 960px), (min-width: 960px) {
