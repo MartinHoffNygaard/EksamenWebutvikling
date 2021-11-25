@@ -1,3 +1,5 @@
+/* Her laster jeg inn skrifttypene jeg skal bruke */
+
 @font-face {
     font-family: "bebas_neueregular";
     src: url("assets/fonts/bebasneue-regular-webfont.woff") format('woff2'),
@@ -7,8 +9,12 @@
 
 }
 
+/*Dette er det generelle designet av nettsiden som er basert utfra mobilskjerm. Alt som designes her går til alle skjermstørrelsene */
+
 @media screen and (max-width: 600px), (min-width: 600px) and (max-width: 960px), (min-width: 960px) {
 
+/* Endrer skrifttypen hele nettsiden starter med i mobilstørrelsebn */
+    
 * {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -16,6 +22,8 @@
     margin: 0; 
     line-height: 1.5;
 }
+
+/*Justerer skriften for overskrifter i forhold til hovedskriften og legger til noen marginer på overskrifter og paragrafer */
 
 h1, h2, h3 {
     font-family: bebas_neueregular, Arial, sans-serif;
@@ -44,9 +52,11 @@ h3 {
     font-size: 1.5rem;
 }
 
+/* Her designes navigasjonsbaren på nettsiden. */
+
 nav {
     padding: 1rem;
-    height: 10vh
+    grid-area: header;
 }
 
 nav ul {
@@ -54,16 +64,13 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 5vh;
 }
 
 nav li {
     list-style-type: none;
 }
 
-.navigationbar {
-    grid-area: header;
-}
+/* Her blir det gjort justeringer på hvordan lenker oppfører seg slik at de er mer synlige og enkle å brukle */
 
 a {
     padding: 0.5rem;
@@ -77,8 +84,9 @@ a:hover {
     color: #fe3137;
 }
 
+/* Design av hele nettsiden. Har laget ett grid system for nettsiden slik at header er i toppen, innholdet i midten og footer på bunn. Har også lagt til en bakgrunnsfarge. */
+
 body {
-    min-height: 100vh;
     display: grid;
     grid-template-rows: 5% 90% 5%;
     grid-template-columns: 1fr;
@@ -89,15 +97,18 @@ body {
     background: #e9a17b;
 }
 
+/* Dette er designet av selve innholdet på nettsiden når det bare brukes en kolonne. */
+
 .content {
     width: 95vw;
-    min-height: 90vh;
     margin-right: auto;
     margin-left: auto;
     background-color: #f5f2e3;
     grid-area: content; 
     border: solid #191608;
 }
+
+/* Designer de ulike delene av innholdet og endre bilder til å passe inn på siden */
 
 .content div {
     margin: 1rem 1rem 1rem;
@@ -111,6 +122,8 @@ body {
     max-width: 100%;
     max-height: 100%;
 }
+
+/* Dette designer hvordan innholdet ser ut i to kolonner */
 
 .two-column-content {
     width: 95vw;
@@ -126,6 +139,8 @@ body {
     margin: 1rem 1rem 1rem;
     padding: 1rem 1rem 1rem;
 }
+
+/* Dette er de ulike boksene i grid systemet. Her bli designet og plasseringen bestemt. */
 
 .box-2, .box-3 {
     border-bottom: 1px solid #404042;
@@ -149,6 +164,8 @@ body {
     display: none; 
 }
 
+/*Designet av innholdet til den kreative nettsiden, spesifikt for mobilstørrelse i en enkel kolonne. */
+
 .fun-page-content {
     margin: 0 1rem 1rem; 
     min-height: 90vh;
@@ -168,6 +185,8 @@ body {
         "text-4"
         "picture-4";
 }
+
+/*Her bestemmes plasseringen til de ulike boksene på den kreative siden og bildene blir designet */
 
 .fun-page-content img {
     object-fit: cover;
@@ -229,6 +248,8 @@ body {
     list-style: none;
 }
 
+/* All denne koden er for å designe de ulike punktene på listen på hjemmesiden. */
+
 .box-3 ul li:nth-child(1):before {
     content: "🏈";
        width: 1rem;
@@ -278,21 +299,15 @@ body {
        
 }
 
+/* Design av bunnen på nettsiden */
+
 .footer {
     grid-area: footer; 
     text-align: center;
     padding: 1rem; 
 }
 
-.footer a {
-    text-decoration: none;
-    color: #191608;
-}
-
-.footer a:hover {
-    text-decoration: underline;
-    color: #fe3137;
-}
+/* Design av knappen man kan trykke på for å gå tilbake til toppen */
 
 #btnScrollToTop {
     position: fixed;
@@ -311,7 +326,11 @@ body {
 
 }
 
+/* Designet for tablet skjermstørrelser og større */
+
 @media screen and (min-width: 600px) and (max-width: 960px), (min-width: 960px) {
+
+/* Litt endring av skriftstørrelse og margin til å passe større skjerm */
 
     * {
         font-size: 16px;
@@ -320,6 +339,8 @@ body {
     nav a {
         margin: 0.75rem;
     }
+
+    /* Design og grid løsingen for to kolonner som brukes på hjemmesiden */
 
     .two-column-content {
         width: 90vw; 
@@ -335,6 +356,8 @@ body {
         grid-row-gap: 1rem;
         border: solid #191608;
     }
+
+    /* Justerer bredden på innholdet og bestemmer hvor boksene skal være i de to kolonnene */
 
     .content {
         width: 90vw;
@@ -373,6 +396,8 @@ body {
         max-height: 100%;
     }
 
+    /* Design av grid systemet som brukes på kreative siden */
+
     .fun-page-content {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -384,7 +409,11 @@ body {
     }
 }
 
+/* Design for skjermer større enn 960 piksler */
+
 @media screen and (min-width: 960px) {
+
+    /* Justerer skriftstørrelsen og bredden på innholdet til å passe skjermstørrelsen */
 
     * {
         font-size: 24px;
