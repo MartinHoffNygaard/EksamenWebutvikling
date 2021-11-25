@@ -13,6 +13,13 @@
 
 <body>
     <header>
+        <script>
+            mybutton = document.getElementById("btnScrollToTop");
+            function topFunction(){
+                document.body.scrollTop = 0;// For safari browsers
+                document.documentElement.scrollTop = 0; // For Chrome, IE, Firefox og Opera
+            }
+        </script>
         <nav>
             <div class="navigationbar">
                 <ul>
@@ -115,7 +122,7 @@
             <p>Forfattere: studenter </p>
             <p><a href="mailto:ikkebruk@ikkebruk.no">ikkebruk@ikkebruk.no</a></p>
         </div>
-        <button id = "btnScrollToTop">
+        <button onclick ="topFunction()" id = "btnScrollToTop" title="Gå til toppen">
             <i class ="material-icons">arrow_upward</i>
         </button>
     </footer>
